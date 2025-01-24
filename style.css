@@ -1,0 +1,822 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+*{
+    scroll-behavior: smooth;
+}
+
+:root
+{
+    --color-body: #b6cbce;
+    --sidbar-width: 240px;
+    --font-base: "Bai Jamjuree";
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: var(--font-base), sans-serif;
+    background-image: url("https://w0.peakpx.com/wallpaper/751/662/HD-wallpaper-squares-3d-background-blue-dark-room-lights-square.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar
+{
+    width: 0;
+}
+
+body::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* @media(max-width: 2000px){
+    .full-height{
+
+        min-height: 40vh !important;
+        flex-direction: column !important;
+        justify-content: center;
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+        margin-top: 0px !important;
+        min-height: 40vh !important; */
+    /* }
+
+} */
+
+/* @media (max-width: 400px)
+{
+
+    .navbar
+    {
+        width: 240px;
+    }
+
+    .img {
+        border: 8px solid rgb(11, 54, 81);
+        height: auto;
+        width: 200px;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .float-end {
+        float: inline-start !important;
+        justify-content: center !important;
+    }
+
+    #home
+    {
+        height: auto !important; 
+    }
+
+    .full-height{
+        flex-direction: column !important;
+        justify-content: center;
+    }
+
+    #homeo
+    {
+        justify-content: center;
+        text-align: center;
+        width: auto;
+     } 
+
+    .link-custom
+    {
+        position: relative;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .card
+    {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+   
+  } */
+
+
+  @media screen and (max-width: 490px)
+  {
+    .card1
+    {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    }
+  }
+
+
+  @media (max-width: 1024px)
+  {
+  
+      .navbar
+      {
+          width: 240px;
+      }
+  
+      .img {
+          border: 8px solid rgb(11, 54, 81);
+          height: auto;
+          /* width: 200px; */
+          justify-content: center !important;
+          text-align: center !important;
+      }
+  
+      .float-end {
+        position: relative;
+          float: none !important;
+          justify-content: center !important;
+      }
+  
+      #home
+      {
+          height: auto !important; 
+      }
+  
+      .full-height{
+          flex-direction: column !important;
+          justify-content: center !important;
+      }
+  
+      #homeo
+      {
+          justify-content: center;
+          text-align: center;
+          width: auto;
+       } 
+  
+      
+      .card
+      {
+          margin-top: 10px !important;
+          margin-bottom: 10px !important;
+      }
+     
+    }
+  
+    @media (max-width:700px)
+    {
+    
+        .full-height{
+            top: 50px !important;
+            position: relative;
+            flex-direction: column !important;
+            justify-content: center;
+            width: 523px;
+            height: auto;
+            
+        }
+        
+    .navbar
+    {
+        width: 540px;
+    }
+
+    .img {
+        border: 8px solid rgb(11, 54, 81);
+        height: auto;
+        width: 350px;
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+
+    #home
+    {
+        height: auto !important; 
+        display: flex;
+        position: relative;
+    }
+
+    .content-wrapper
+    {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #homeo
+    {
+        justify-content: center;
+        text-align: center;
+        width: auto;
+        margin-top: 20px;
+        margin-left: 35px;
+
+     } 
+
+    .card
+    {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .card
+    {
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+        
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+.full-height
+{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid #13406c90;
+}
+
+.parallax
+{
+    background-image: url("https://img.freepik.com/free-vector/paper-style-dynamic-lines-background_23-2149008629.jpg?size=626&ext=jpg&ga=GA1.1.2113030492.1719792000&semt=ais_user");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 300px;
+
+}
+
+.parallax::before
+{
+    content: "";
+    position: absolute;
+    background-image: inherit;
+    filter: blur(100px);
+    -webkit-filter: blur(100px);
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.color
+{
+    color:#01aaff;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-weight: 700;
+    color: #eef3db;
+}
+
+p
+{
+    color: #eef3db;
+}
+
+.home
+{
+    top: 100;
+}
+
+img
+{
+    width: 300px;
+    height: 300px;
+}
+
+a
+{
+    text-decoration: none;
+    font-weight: 400;
+}
+
+a:hover
+{
+    color: rgb(255, 255, 255);
+}
+
+.link-custom
+{
+    color: #eef3db;
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after
+{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #eef3db;
+    color: #eef3db;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.link-custom:hover::after
+{
+    font-size: 25px;
+    color: #eef3db;
+    width: 100%;
+}
+
+
+/* card */
+
+.card
+{
+    background-color: rgba(28, 47, 59, 0.734);
+}
+
+.card-body
+{
+    border-radius: 15px;
+}
+
+.card.images
+{
+    overflow: hidden;
+}
+
+.card
+{
+    transition: all 0.4s ease;
+}
+
+
+.card:hover
+{
+    transform: scale(1.1);
+
+}
+
+
+
+/* //card */
+
+/* blog */
+
+.images
+{
+    width: 100%;
+    height: 150px;
+}
+
+/* //blog */
+
+/* CSS */
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #eef3db;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 30px;
+  min-width: 0;
+  outline: none;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: rgb(28, 47, 59);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* contact */
+
+#contact .form-control
+{
+    background-color: rgba(28, 47, 59, 0.663);
+    border-color: rgb(50, 81, 107);
+}
+
+#contact .form-control:focus
+{
+    border-color: var(--color-brand);
+    box-shadow: none;
+}
+
+#contact .form-control::placeholder
+{
+    color: #eef3db;
+}
+
+#contact input.form-control
+{
+    color: #ffffff;
+    height: 44px;
+}
+
+#exampleFormControlTextarea1
+{
+    color: #ffffff;
+}
+/* //contact */
+
+
+.shadow-effect
+{
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover
+{
+    box-shadow: 0 .5rem 1rem rgb(75, 111, 134);
+}
+
+.img
+{
+    border: 8px solid rgb(11, 54, 81);
+}
+
+.btn-outline-dark:hover
+{
+    background-color: rgb(28, 47, 59);
+}
+
+/* footer */
+
+.social-links a
+{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 153, 255);
+    background-color: rgba(15, 126, 196, 0.338);
+    display: inline-flex;
+    border-radius: 100px;
+    font-size: 24px;
+    margin: 3px;    
+}
+
+.social-links a:hover
+{
+    color: rgb(255, 255, 255);
+}
+
+/* footer */
+
+
+.Home
+{
+    background-color: #fff;
+    padding-top: 60px;
+    padding-left: 20px;
+    border-radius: 20px;
+    padding-bottom: 30px;
+}
+
+.navbar-brand
+{
+    font-size: 30px;
+    color: #fff;
+}
+
+.nb
+{
+    background-color: rgb(28, 47, 59);
+    border-radius: 20px;
+
+}
+
+
+h6
+{
+    color: rgb(40, 138, 200);
+}
+
+h1
+{
+    color: #eef3db;
+}
+
+
+.btn:hover
+{
+    color: #ffffff;
+    box-shadow: 0px 8px 15px rgba(13, 124, 235, 0.266);
+
+}
+
+
+
+.text-content
+{
+    top: 45%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(10%, -30%);
+    transition: .3s;
+    text-align: center;
+    color: #ffffff;
+}
+
+.single-content:hover .text-content
+{
+    opacity: 1;
+    transform: translate(0, -50%);
+    transition-delay: .3s;
+}
+li > a{
+    font-size: 20px;
+    color: #fff !important;
+}
+li > a:hover{
+    color: rgb(0, 157, 255) !important;
+}
+
+
+
+.button {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    outline: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(15, 126, 196, 0.338);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 0px 4px rgba(93, 178, 231, 0.338);
+    cursor: pointer;
+    transition: all 0.3s;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .button.active
+  {
+    pointer-events: auto;
+    opacity: 1;
+    bottom: 32px;
+  }
+
+  .svgIcon {
+    width: 12px;
+    transition-duration: 0.3s;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .button:hover {
+    width: 90px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: rgb(1, 170, 255);
+    align-items: center;
+  }
+  
+  .button:hover .svgIcon {
+    /* width: 20px; */
+    transition-duration: 0.3s;
+    transform: translateY(-200%);
+  }
+  
+  .button::before {
+    position: absolute;
+    bottom: -20px;
+    content: "Back to Top";
+    color: white;
+    /* transition-duration: .3s; */
+    font-size: 0px;
+  }
+  
+  .button:hover::before {
+    font-size: 13px;
+    opacity: 1;
+    bottom: unset;
+    /* transform: translateY(-30px); */
+    transition-duration: 0.3s;
+  }
+
+  .logo
+  {
+    width: 70px;
+    height: auto;
+    color: #01aaff;
+    /* filter: brightness(1) invert(1); */
+  }
+
+
+  .navbar-brand:focus, .navbar-brand:hover {
+    color: white;
+}
+
+
+
+
+
+/* skills */
+
+.card1{
+    position: relative;
+    width: 180px;
+    height: 180px;
+    /* background: #333; */
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card1:hover{
+    width: 350px;
+    transition-delay: 0.5s;
+}
+.card1 .circle{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card1 .circle::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 8px solid var(--clr);
+    background: #ffffffdc;
+    transition: 0.5s, background 0.5s;
+    transition-delay: 0.75s,1s;
+    filter: drop-shadow(0 0 10px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+.card1:hover .circle::before{
+    width: 100%;
+    transition-delay: 0.5s;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--clr);
+}
+.card1 .circle .logo{
+    position: relative;
+    width: 70px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+.card1:hover .circle .logo{
+    transform: scale(0);
+    transition-delay: 0s;
+}
+.card1 .product_img{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    transform: translate(-50%,-50%) scale(0) rotate(315deg);
+    width: 200px;
+    transition: 0.5s ease-in-out;
+    filter: drop-shadow(0px 0px 10px rgb(26, 25, 25));
+}
+.card1:hover .product_img{
+    transition-delay: 0.75s;
+    transform: translate(-50%,-50%) scale(1) rotate(-2deg);
+    top: 47%;
+    left: 70%;
+    height: 160px;
+}
+.card1 .content{
+    position:absolute;
+    width: 50%;
+    left: 50%;
+    padding: 30px 20px 20px 40px;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden;
+}
+.card1:hover .content{
+    transition-delay: 0.75s;
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    z-index: 999;
+}
+.card1 .content h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: 1em;
+}
+.card1 .content p{
+    color: #fff;
+    font-size: 12px;
+}
+
+/* //skills */
+ 
+
+.navbar-toggler
+{
+    color: #fff;
+}
+
+span.navbar-toggler-icon
+{
+    color: #fff !important;
+}
+
+
+.to-top.active
+{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+
+#preloader
+{
+    background:#000 url("https://cdn.svgator.com/images/2023/06/spiral-css-preloader.gif") no-repeat center center;
+    background-position: center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100vh;
+    position: fixed;
+    z-index: 100;
+}
